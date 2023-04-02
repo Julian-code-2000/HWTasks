@@ -7,11 +7,9 @@
 int numbResult = -1; //-1 подсказка о неисправн.
 int numberRandom = new Random().Next(99, 1000);
 int numberNew = FindSecondDigit(numberRandom);
-
-Console.WriteLine($"Рандомное трехзначное число {numberRandom}");
-
 numbResult = numberNew;
 
+Console.WriteLine($"Рандомное трехзначное число {numberRandom}");
 Console.WriteLine($"Полученная вторая цифра {numbResult}");
 
 
