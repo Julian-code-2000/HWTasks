@@ -7,20 +7,21 @@
 Console.WriteLine("Введите число сотвествующее дню недели");
 string numberDay = Console.ReadLine();
 DaysWeek(numberDay);
+DaysOff(numberDay);
 
-
-if (numberDay == "6")
+void DaysOff(string day)
 {
-    Console.WriteLine("ВЫХОДНОЙ");
+    if (day == "6")
+    {
+        Console.WriteLine("ВЫХОДНОЙ");
+    }
+    else if (day == "7")
+    {
+        Console.WriteLine("ВЫХОДНОЙ");
+    }
 }
-else if (numberDay == "7")
-{
-    Console.WriteLine("ВЫХОДНОЙ");
-}
-
-
-
 void DaysWeek(string day)
+
 {
     if (day == "1")
     {
@@ -54,4 +55,4 @@ void DaysWeek(string day)
     {
         Console.WriteLine("Число НЕ СООТВЕТСТВУЕТ дню недели");
     }
-    }
+}
