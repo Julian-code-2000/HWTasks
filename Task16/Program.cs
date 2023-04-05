@@ -12,9 +12,10 @@ Console.WriteLine("Введите второе число");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
 bool result = IsFirstSquareSecond(number1, number2);
-Console.WriteLine(result ? "Является" : " НЕ Является");
+ string res = result? "одночисло является квадратом другого": "число не является квадратом другого";
+Console.WriteLine(res);
 
 bool IsFirstSquareSecond(int numb1, int numb2)
 {
-    return numb1 * numb1 == numb2;
+    return numb1 * numb1 == numb2 || numb2*numb2==numb1 ;
 }
