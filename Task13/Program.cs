@@ -13,7 +13,7 @@ if (NumbControl(thirdDigit))
 {
 int numberResult = FindThirdDigit(thirdDigit);
 Console.WriteLine($"{ numberResult }");
-
+}
 
 int FindThirdDigit(int numb)
 {
