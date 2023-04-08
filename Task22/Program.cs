@@ -2,22 +2,22 @@
 // // принимает на вход число (N) и выдаёт таблицу
 // // квадратов чисел от 1 до N.
 
-string Spreadsheet(int nNum)
+string Table(int n)
 {
-string spreadsheetResult = "________________\n";
-for (int i = 1; i <= nNum; i++)
+string tResult = "________________\n";
+for (int i = 1; i <= n; i++)
 {
-spreadsheetResult = spreadsheetResult + $"|{i} | {i * i}| \n";
+tResult = tResult + $"|{i} | {i * i}| \n";
 }
-spreadsheetResult = spreadsheetResult+ "______________________";
+tResult =tResult+ "______________________";
 
-return spreadsheetResult;
+return tResult;
 }
 
 Console.Write("Введи число N:");
-int n = Convert.ToInt32(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine());
 
-string result = Spreadsheet(n);
+string result = Table(number);
 Console.Write(result);
 
 
